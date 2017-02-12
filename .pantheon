@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-gsettings set org.pantheon.files.preferences show-hiddenfiles "true" # Show hidden files
+gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click "true" # Enable tap-to-click
 
 gsettings set org.pantheon.desktop.gala.appearance button-layout "close,minimize,maximize" # Unity-like window button layout
 
-# Desktop Hot Corners
+# Hot Corners
 
 gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomleft "window-overview"
 gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomright "window-overview"
