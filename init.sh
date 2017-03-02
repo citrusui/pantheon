@@ -11,23 +11,31 @@ function checkTools() {
 }
 
 function pullSource() {
-  rsync --exclude ".git" --exclude ".travis.yml" --exclude "init.sh" --exclude "*.md" -avh --no-perms . ~; # TODO: suppress output with -s and report if files were untouched
+  rsync --exclude ".git" --exclude ".travis.yml" --exclude "*.md" --exclude "*.sh" -avh --no-perms . ~; # TODO: suppress output with -s and report if files were untouched
+  if [ "$(lsb_release -si 2>&1)" == "elementary" ] || [ "$1" == "--force" ]; then
+    ~/.pantheon
+  fi
 }
 
 checkTools
 
 cd "$(dirname "${BASH_SOURCE}")";
-echo ""
-echo "Pulling updates..."
-echo ""
+echo -e "\nPulling updates...\n"
 git pull origin master;
 if [ "$1" == "-y" ]; then
   pullSource
+elif [ "$1" == "--force" ]; then
+  echo -e "\n\033[1;31mWARNING: Running this script with --force may result in various errors.\033[0m"
+  echo -e "\033[1;31mContinuing anyway...\033[0m\n"
+  sleep 5
+  pullSource --force
 else
   echo ""
-  read -p "This may overwrite your existing preferences. Continue? [Y/N] "
+  read -p "This may overwrite your existing preferences. Continue? [y/N] " REPLY
   echo ""
-  if [[ $REPLY =~ ^[Yy]$ ]]; then
+  if [[ "$REPLY" =~ ^([yY][eE][sS]|[yY])+$ ]]; then
     pullSource
+  else
+    echo "Aborted."
   fi
 fi

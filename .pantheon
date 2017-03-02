@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo ""
+echo -e "\033[34mConfiguring Pantheon...\033[0m"
+
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click "true" # Enable tap-to-click
 
 gsettings set org.pantheon.desktop.gala.appearance button-layout "close,minimize,maximize" # Unity-like window button layout
