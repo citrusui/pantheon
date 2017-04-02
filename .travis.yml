@@ -6,6 +6,6 @@ language: node_js
 node_js:
  - stable
 script:
- - ./init.sh
+ - ./init.sh -y
 notifications:
   email: false
