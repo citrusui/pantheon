@@ -12,7 +12,7 @@ gsettings set org.pantheon.desktop.gala.appearance button-layout "close,minimize
 gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomleft "window-overview"
 gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomright "window-overview"
 
-gsettings set io.elementary.desktop.wingpanel.indicators.power show-percentage "true" # Show battery percentage
+gsettings set io.elementary.desktop.wingpanel.power show-percentage "true" # Show battery percentage
 
 # Terminal
 
