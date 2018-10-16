@@ -12,31 +12,31 @@ gsettings set org.pantheon.desktop.gala.appearance button-layout "close,minimize
 gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomleft "window-overview"
 gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomright "window-overview"
 
-gsettings set org.pantheon.desktop.wingpanel.indicators.power show-percentage "true" # Show battery percentage
+gsettings set io.elementary.desktop.wingpanel.indicators.power show-percentage "true" # Show battery percentage
 
 # Terminal
 
-gsettings set org.pantheon.terminal.settings allow-bold "true"
-gsettings set org.pantheon.terminal.settings alt-changes-tab "true"
-gsettings set org.pantheon.terminal.settings audible-bell "true"
-gsettings set org.pantheon.terminal.settings background "#292e33"
-gsettings set org.pantheon.terminal.settings cursor-color "#6b7a86"
-gsettings set org.pantheon.terminal.settings cursor-shape "Block"
-gsettings set org.pantheon.terminal.settings encoding "UTF-8"
-gsettings set org.pantheon.terminal.settings follow-last-tab "true"
-gsettings set org.pantheon.terminal.settings font "Liberation Mono, 13"
-gsettings set org.pantheon.terminal.settings foreground "#f9f9f9"
-gsettings set org.pantheon.terminal.settings natural-copy-paste "true"
-gsettings set org.pantheon.terminal.settings palette "#40484f:#e03431:#79ce80:#e8e366:#4ea5d9:#e031a8:#4ed4d8:#f9f9f9:#40484f:#e03431:#79ce80:#e8e366:#4ea5d9:#e031a8:#4ed4d8:#f9f9f9"
-gsettings set org.pantheon.terminal.settings remember-tabs "true"
-gsettings set org.pantheon.terminal.settings save-exited-tabs "true"
-gsettings set org.pantheon.terminal.settings shell "bash"
-gsettings set org.pantheon.terminal.settings scrollback-lines "-1"
-gsettings set org.pantheon.terminal.settings tab-bar-behavior "Always Show Tabs"
-gsettings set org.pantheon.terminal.settings unsafe-paste-alert "false"
+gsettings set io.elementary.terminal.settings allow-bold "true"
+gsettings set io.elementary.terminal.settings alt-changes-tab "true"
+gsettings set io.elementary.terminal.settings audible-bell "true"
+gsettings set io.elementary.terminal.settings background "#292e33"
+gsettings set io.elementary.terminal.settings cursor-color "#6b7a86"
+gsettings set io.elementary.terminal.settings cursor-shape "Block"
+gsettings set io.elementary.terminal.settings encoding "UTF-8"
+gsettings set io.elementary.terminal.settings follow-last-tab "true"
+gsettings set io.elementary.terminal.settings font "Liberation Mono, 13"
+gsettings set io.elementary.terminal.settings foreground "#f9f9f9"
+gsettings set io.elementary.terminal.settings natural-copy-paste "true"
+gsettings set io.elementary.terminal.settings palette "#40484f:#e03431:#79ce80:#e8e366:#4ea5d9:#e031a8:#4ed4d8:#f9f9f9:#40484f:#e03431:#79ce80:#e8e366:#4ea5d9:#e031a8:#4ed4d8:#f9f9f9"
+gsettings set io.elementary.terminal.settings remember-tabs "true"
+gsettings set io.elementary.terminal.settings save-exited-tabs "true"
+gsettings set io.elementary.terminal.settings shell "bash"
+gsettings set io.elementary.terminal.settings scrollback-lines "-1"
+gsettings set io.elementary.terminal.settings tab-bar-behavior "Always Show Tabs"
+gsettings set io.elementary.terminal.settings unsafe-paste-alert "false"
 
 # Scratch
 
-gsettings set org.pantheon.scratch.settings auto-indent "true"
-gsettings set org.pantheon.scratch.settings highlight-matching-brackets "false"
-gsettings set org.pantheon.scratch.settings indent-width "2"
+gsettings set io.elementary.code.settings auto-indent "true"
+gsettings set io.elementary.code.settings highlight-matching-brackets "false"
+gsettings set io.elementary.code.settings indent-width "2"
